@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact – The Lorem Ipsum" />
+    <title>Contact – The Lorem Ipsum</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="container">
+
+        <header class="site-header">
+            <h1>Contact – The Lorem Ipsum</h1>
+            <nav class="nav">
+                <a class="btn-link" href="index.html">Headlines</a>
+                <a class="btn-link" href="contact.html" aria-current="page">Contact</a>
+            </nav>
+        </header>
+
+
+        <main class="contact-content">
+            <form class="contact-form" action="#" method="post" novalidate>
+
+                <fieldset class="fs-personalia">
+                    <legend>Personalia</legend>
+
+                    <label for="name">Name</label>
+                    <input id="name" name="name" type="text" required aria-required="true" />
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" required aria-required="true" />
+
+                    <label for="country">Country</label>
+                    <select id="country" name="country" required aria-required="true">
+                        <option value="" selected disabled>(select one)</option>
+                        <option value="se">Sweden</option>
+                        <option value="no">Norway</option>
+                        <option value="dk">Denmark</option>
+                        <option value="fi">Finland</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="de">Germany</option>
+                    </select>
+                </fieldset>
+
+
+                <fieldset class="fs-select">
+                    <legend>Select</legend>
+
+                    <p class="question">What department do you want to contact?</p>
+                    <label class="choice"><input type="checkbox" name="dept" value="news" /> News</label>
+                    <label class="choice"><input type="checkbox" name="dept" value="sports" /> Sports</label>
+
+                    <p class="question">Do you want a replay?</p>
+                    <label class="choice"><input type="radio" name="replay" value="yes" /> Yes</label>
+                    <label class="choice"><input type="radio" name="replay" value="no" /> No</label>
+                </fieldset>
+
+
+                <div class="form-actions">
+                    <button class="btn" type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+
+
+        <footer class="site-footer">
+            <img src="img/sun.webp" width="20" height="20" alt="Sunny icon" />
+            <span>London 19&#176;</span>
+        </footer>
+    </div>
+</body>
+
+</html>
